@@ -6,9 +6,14 @@
 
 html {
   block-size: 100%;
+  height: 100%;
 }
 
 .page {
+  display:grid;
+  width: 100%; 
+  place-items: center;
+  place-content: center; 
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -36,3 +41,138 @@ ul,
 ol {
   list-style: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+} 
+
+.content{
+  display: flex;
+  align-items: end;
+  width: 1140px;
+  height: 534px;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.result{
+width: 711px;
+}
+
+.result__video-container{
+  height: 386px;
+  position: relative;
+}
+
+.result__video{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content__details{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 399px;
+  height: 100%;
+}
+
+.search-form{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap:40px;
+  margin-top: 16px;
+}
+
+.content__list{
+  height: 298px;
+  overflow: hidden scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.content__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.title{
+  display: inline;
+  font-family: Oswald;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.content__accent{
+  opacity: .3;
+}
+
+
+.content__video-card{
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+
+.content__list-item{
+  height: 107px;
+}
+
+.content__video-card-thumbnail{
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+}
+
+.content__video-card-description-container{
+  position:relative;
+}
+
+.content__video-card-title{
+  font-family: Oswald;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.content__video-card-description{
+  line-height: 1em;
+}
+.content__video-card-description, 
+.search-form__fieldset-title{
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+.content__card-link{
+  text-decoration: none;
+  color: #fff;
+}
+
+.search-form__fieldset{
+  border: none;
+  width: 225px;
+}
+
+.search-form__label{
+  width: fit-content;
+  display: inline-block;
+  appearance: none;
+}
+
+
+
