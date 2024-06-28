@@ -166,13 +166,55 @@ width: 711px;
 .search-form__fieldset{
   border: none;
   width: 225px;
+
 }
 
 .search-form__label{
-  width: fit-content;
   display: inline-block;
+  width: fit-content;
   appearance: none;
+  margin-top: 5px;
+  
 }
 
 
+.search-form__textfield{
+  width: 225px;
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  border-top: 1px solid currentColor;
+}
+
+.search-form__checkbox-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form__submit-button{
+  width: 205px;
+  height: 34px;
+  align-self: end;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  text-align: center;
+  color: #fff;
+  border: 1px solid currentColor;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid white;
+}
 
