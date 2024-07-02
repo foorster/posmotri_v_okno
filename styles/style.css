@@ -62,6 +62,7 @@ ol {
 
 .result {
   width: 711px;
+  height: 456px;
 }
 
 .result__video-container {
@@ -109,19 +110,18 @@ ol {
   font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
-  line-height: 0.9em;
+  line-height: 0.94em;
   text-align: left;
   text-transform: uppercase;
 }
 
 .content__accent {
   opacity: 0.3;
-  line-height: 1.1em;
 }
 
 .content__video-card {
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-template-columns: 200px 194px;
 }
 
 .content__list-item {
@@ -129,7 +129,7 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
+  width: 198px;
   height: 103px;
   object-fit: cover;
   justify-self: end;
@@ -154,8 +154,12 @@ ol {
 
 .content__video-card-description {
   line-height: 1em;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
 }
-.content__video-card-description,
+
 .search-form__fieldset-title {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -175,15 +179,19 @@ ol {
 }
 
 .search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   border: none;
   width: 225px;
 }
 
 .search-form__label {
-  display: flex;
-  gap: 5px;
   width: fit-content;
   appearance: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .search-form__textfield {
@@ -197,12 +205,22 @@ ol {
   border: none;
   border-bottom: 1px solid currentColor;
   border-top: 1px solid currentColor;
+  line-height: 1.22em;
+}
+
+.search-form__textfield::placeholder {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.22em;
+  text-align: left;
 }
 
 .search-form__checkbox-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .search-form__submit-button {
@@ -235,11 +253,6 @@ ol {
   width: 399px;
 }
 
-.search-form__label {
-  padding: 2px;
-  display: flex;
-  align-items: center;
-}
 
 .search-form__label:has(:focus-visible) {
   border: 1px solid #fff;
@@ -263,7 +276,7 @@ ol {
   text-decoration: underline;
 }
 
-button:focus {
+.button:focus {
   outline: none;
 }
 
