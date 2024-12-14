@@ -1,1 +1,4 @@
-https://github.com/foorster/posmotri_v_okno.git
+# Проектная работа Посмотри в окно
+### Учебный проект на курсе "Фронтенд-разработчик" Яндекс Практикума (ЯП).
+
+![okno4](https://github.com/user-attachments/assets/8a84d256-5f90-4121-8bdb-a157bc7d375c)
